@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>info.gladen</groupId>
+	<artifactId>springssrfspecification</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>springssrfspecification</name>
+	<description>Simple SSRF vulnerable web application (secucheck specification)</description>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>17</java.version>
+		<secucheck.version>SC-1.2.0</secucheck.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>de.fraunhofer.iem.secucheck</groupId>
+			<artifactId>fluentTQL</artifactId>
+			<version>${secucheck.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>de.fraunhofer.iem.secucheck</groupId>
+				<artifactId>fluenttql-maven-plugin</artifactId>
+				<version>SC-1.2.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

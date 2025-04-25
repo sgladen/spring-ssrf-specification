@@ -1,0 +1,10 @@
+# If you specify using the taintflow query ID
+classPath: '<path-to-repo>/spring-ssrf/target/classes/'
+entryPoints:
+- info.gladen.springssrf.SpringssrfApplication
+specPath: '<path-to-repo>/spring-ssrf-specification/target/'
+selectedSpecs:
+- SSRF
+asSpecFile: 'false'
+solver: "Boomerang3"
+isPostProcessResult: false
